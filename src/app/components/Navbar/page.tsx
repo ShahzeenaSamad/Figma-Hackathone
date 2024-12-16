@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
     
-    <div className="relative bg-white">
+    <div className="relative  bg-white">
     
       {/* Black Navbar */}
       <div className="w-[1440px] h-[38px] bg-black relative">
@@ -27,12 +28,12 @@ const Navbar = () => {
           <div className="absolute w-[62px] h-[24px]  left-[1178px] top-[8.5px]">
             {/* Inner Div 1 (24px x 24px) */}
             <div className="absolute w-[24px] h-[24px]  left-[0px] top-[0px]">
-              <Image
+             <Link href="/MyCart"> <Image
                 src="/images/cart.png"
                 alt="Vector"
                 width={22.13}
                 height={20.25}
-              />
+              /></Link>
             </div>
 
             {/* Inner Div 2 (24px x 24px) */}
@@ -72,7 +73,7 @@ const Navbar = () => {
           <div className="absolute w-[321px] h-[22px]  left-[200px] top-[9.5px]">
             {/* Inner Div 1 (57px x 22px) */}
             <div className="absolute w-[57px] h-[22px] left-[0px] top-[0px] flex">
-              <p className="text-sm"> Shop </p>
+              <p className="text-sm"><Link href="/ProductDetail"> Shop </Link></p>
               <Image
                 src="/images/dropdown.png"
                 alt="Vector"
@@ -83,7 +84,7 @@ const Navbar = () => {
 
             {/* Inner Div 2 (56px x 22px) */}
             <div className="absolute w-[56px] h-[22px] left-[81px] top-[0px] flex justify-center items-center font-[12px]">
-              <p className="m-0 text-sm">On Sale</p>
+              <p className="m-0 text-sm"><Link href="/Casual"> On Sale</Link></p>
             </div>
 
             {/* Inner Div 3 (87px x 22px) */}

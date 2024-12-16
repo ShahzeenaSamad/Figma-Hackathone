@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 
-export default function Footer() {
+const Footer = () => {
   return (
     <footer className="relative">
-    <div className="w-[1462px] h-[520px] absolute left-[-1px] top-[3400px]">
+    <div className="w-[1462px] h-[589px] absolute left-[-1px] top-[3781px]">
     <div className="w-[1240px] h-[180px] absolute left-[100px] top-[0px] z-20 rounded-3xl bg-black">
   <div
     className="absolute w-[530px] h-[94px] left-[64px] top-[43px]"
@@ -37,8 +37,6 @@ export default function Footer() {
   </div>
 </div>
 
-
-      <div className="w-[1240px] h-[px] absolute left-[100px] top-[277px]"></div>
   
       <div className="w-[1462px] h-[499px] absolute left-[-1px] top-[90px] bg-[#F0F0F0]">
         <div className="w-[1240px] h-[177px] absolute left-[100px] top-[140px]">
@@ -114,3 +112,6 @@ export default function Footer() {
   
   );
 }
+export default Footer;
+
+

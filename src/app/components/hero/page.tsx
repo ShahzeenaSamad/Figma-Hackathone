@@ -1,6 +1,7 @@
 
 
 import Image from "next/image";
+import Footer from "../Footer/page";
 
 const Hero = () => {
   return (
@@ -84,6 +85,7 @@ const Hero = () => {
         />
       </div>
     </div>
+    
   );
 };
 
